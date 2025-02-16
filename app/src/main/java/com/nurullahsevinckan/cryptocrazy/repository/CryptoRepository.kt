@@ -11,7 +11,6 @@ import javax.inject.Singleton
 class CryptoRepository @Inject constructor(
     private val api : CryptoAPI
 ) {
-
     suspend fun getCryptoList():Resource<List<CryptoList>>{
        val response = try {
            api.getCryptoList()

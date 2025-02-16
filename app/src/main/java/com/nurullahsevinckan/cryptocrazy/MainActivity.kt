@@ -39,9 +39,7 @@ class MainActivity : ComponentActivity() {
                     composable("crypto_list_screen"){
                         //CryptoListScreen
                         CryptoListScreen(navController)
-
                     }
-
                     composable("crypto_detail_screen/{crypto_id}/{crypto_price}", arguments = listOf(
                         navArgument("crypto_id"){type = NavType.StringType},
                         navArgument("crypto_price"){type = NavType.StringType}

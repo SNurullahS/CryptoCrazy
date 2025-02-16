@@ -8,6 +8,4 @@ fun CryptoDetailScreen(
     cryptoId : String,
     cryptoPrice : String,
     navController: NavController){
-
-
 }
