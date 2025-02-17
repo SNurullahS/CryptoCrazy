@@ -1,5 +1,6 @@
 package com.nurullahsevinckan.cryptocrazy.dependencyInjection
 
+import com.nurullahsevinckan.cryptocrazy.repository.CryptoRepository
 import com.nurullahsevinckan.cryptocrazy.services.CryptoAPI
 import com.nurullahsevinckan.cryptocrazy.util.Constant.BASE_URL
 import dagger.Module
@@ -14,6 +15,10 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
+
+    @Singleton
+    @Provides
+    fun provideCryptoRepository(api : CryptoAPI) = CryptoRepository(api)
 
     @Singleton
     @Provides

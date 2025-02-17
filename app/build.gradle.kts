@@ -2,8 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    id("com.google.dagger.hilt.android")
     id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -57,7 +57,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout.compose)
 
     // Lifecycle & ViewModel
-    implementation(libs.androidx.lifecycle.runtime.ktx.v270)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
@@ -99,13 +99,18 @@ dependencies {
 
     // Testing Dependencies
     testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit.v115)
-    androidTestImplementation(libs.androidx.espresso.core.v351)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.ui.test.junit4)
 
     // Debug Dependencies
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
+    androidTestImplementation(libs.androidx.compose.ui.ui.test.junit4)
+
+    implementation(libs.kotlinx.metadata.jvm)
+
+
 }
 
 // Allow references to generated code

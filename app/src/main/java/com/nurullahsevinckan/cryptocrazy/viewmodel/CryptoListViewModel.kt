@@ -19,9 +19,9 @@ class CryptoListViewModel @Inject constructor(
     private val repository : CryptoRepository
 ): ViewModel(){
 
-    var cryptoList = mutableStateOf<List<CryptoList>>(listOf())
-    var errorMessage = mutableStateOf("")
-    var isLoading = mutableStateOf(false)
+     var cryptoList = mutableStateOf<List<CryptoList>>(listOf())
+     var errorMessage = mutableStateOf("")
+     var isLoading = mutableStateOf(false)
 
     private var initialCryptoList = listOf<CryptoList>()
     private var isSearchStarting = true
@@ -57,7 +57,6 @@ class CryptoListViewModel @Inject constructor(
             cryptoList.value = result
         }
     }
-
 
     fun loadCryptos(){
         isLoading.value = true
