@@ -72,7 +72,9 @@ class CryptoListViewModel @Inject constructor(
                     cryptoList.value += cryptoItems
                 }
                 is Resource.Error -> {errorMessage.value = result.message!!}
-                is Resource.Loading -> TODO()
+                is Resource.Loading -> {
+                    isLoading.value = true
+                }
             }
         }
     }

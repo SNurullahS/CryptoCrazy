@@ -110,7 +110,12 @@ dependencies {
 
     implementation(libs.kotlinx.metadata.jvm)
 
-
+    implementation(libs.hilt.android.v254)
+    kapt(libs.hilt.android.compiler.v254)
+    implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx.v270)
+    implementation(libs.kotlin.reflect)
 }
 
 // Allow references to generated code

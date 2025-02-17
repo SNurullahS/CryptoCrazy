@@ -1,5 +1,4 @@
 package com.nurullahsevinckan.cryptocrazy.view
-
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavController
 
