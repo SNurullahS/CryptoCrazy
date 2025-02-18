@@ -22,5 +22,5 @@ val Teal200 = Color(0xFF03DAC5)
 
 val RichBlack = Color(22, 111, 123)
 val BlueMunsell = Color(229, 243, 238)
-val Bone = Color(0xFFDDDBCB)
+val Bone = Color(0xFF383532)
 val Alabaster = Color(0xFFE9F5F2)
