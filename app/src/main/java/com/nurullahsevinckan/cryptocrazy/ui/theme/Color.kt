@@ -20,7 +20,7 @@ val Purple500 = Color(0xFF6200EE)
 val Purple700 = Color(0xFF3700B3)
 val Teal200 = Color(0xFF03DAC5)
 
-val RichBlack = Color(22, 111, 123)
+val RichBlack = Color(121, 226, 250, 255)
 val BlueMunsell = Color(229, 243, 238)
 val Bone = Color(0xFF383532)
 val Alabaster = Color(0xFFE9F5F2)
